@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Para add um novo:
+    coloca o id  -> usaremos no código, não aparece no menu
+    icon: ... -> alguma imagem do drawable
+    title:... -> Título que irá aparecer no MENU!!
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/info"
+                android:title="Informações pessoais" />
+            <item
+                android:id="@+id/nav_minhasCaronas"
+                android:icon="@drawable/rosto"
+                android:title="Minhas Caronas" />
+            <item
+                android:id="@+id/nav_calc"
+                android:icon="@drawable/calculator"
+                android:title="Calculadora" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Sair" />
+            <item
+                android:id="@+id/nav_ajuda"
+                android:icon="@drawable/info"
+                android:title="Dúvidas Frequentes" />
+
+
+
+
+
+        </menu>
+    </item>
+
+</menu>
+

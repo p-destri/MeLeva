@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="petma.testesappcarona.dados"
+    tools:showIn="@layout/activity_dados"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.4"
+        >
+        <!-- Foto + botão de pegar perfil-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:src="@drawable/ppl"
+                android:id="@+id/imgPerfil" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:id="@+id/pegaPerfil"
+                android:text=" VER PERFIL "
+                android:textSize="12sp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.65"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOME DA CARONA"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/txtNome" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome da pessoa"
+                android:textColor="@color/blueHelp"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ct"
+                android:text=" 08/10/200"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+
+                android:id="@+id/txtData" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ctt"
+                android:textColor="#000000"
+                android:text=" 12:00"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:id="@+id/txtHorario" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Origem:"
+            android:layout_marginBottom="2dp"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do local de origem"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtLocal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destino:"
+            android:layout_marginBottom="2dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do local de destino"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtChegada" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vagas disponíveis:"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="3"
+            android:textColor="#000000"
+            android:id="@+id/txtVagas" />
+
+        <TextView
+            android:id="@+id/passag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vago"
+            />
+        <TextView
+            android:id="@+id/passag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vago"
+            />
+        <TextView
+            android:id="@+id/passag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vago"
+            />
+        <TextView
+            android:id="@+id/passag4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vago"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recados da carona:"
+            android:textColor="@color/blueHelp"
+            android:textSize="16sp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <TextView
+            android:id="@+id/txtRecado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-Não há recados."
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:text="  PEDIR CARONA  "
+            android:textColor="#000000"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:id="@+id/pegaCarona" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imagem"
+        android:scaleType="fitXY"
+        android:src="@drawable/rosto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome da Carona"
+            android:textSize="15sp"
+            android:textColor="@color/azul2"
+            android:id="@+id/nome"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!---->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Saida"
+                android:textSize="12sp"
+                android:gravity="end"
+                android:id="@+id/saida"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dedodireita"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.1"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Chegada"
+                android:textSize="12sp"
+                android:id="@+id/chegada"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Horario"
+                android:textSize="12sp"
+                android:id="@+id/horario"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data vai aqui"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:id="@+id/data"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="1sp"
+        android:gravity="end"
+        android:id="@+id/pessoa"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matricula"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:id="@+id/matricula"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="cid"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:id="@+id/cid"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="Vagas"
+        android:textSize="12sp"
+        android:id="@+id/vagas"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="Recado"
+        android:textSize="1sp"
+        android:id="@+id/recado"
+        android:layout_weight="0.5"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>
+

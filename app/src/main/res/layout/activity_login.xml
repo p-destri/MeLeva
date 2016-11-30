@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/activity_login"
+    android:fitsSystemWindows="true"
+    android:background="@color/branco">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <!--Trocar pela imagem que queremos usar
+            android:src -> aqui vai o logo do app
+        -->
+        <ImageView
+            android:layout_marginTop="80sp"
+            android:src="@mipmap/icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Bloco do Email  -->
+        <!-- desing.widget -> já vem pronto, quando o usuário clica, o texto vai subir automatic.
+        input type só número, para que só seja possivel fazer log in usando o número da matrícula
+        hint - Texto que aperce de fundo-
+
+        -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText android:id="@+id/login_input_matricula"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Número de matrícula" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_password"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Senha do cagr"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/blueHelp"
+            android:background="@drawable/roundedbutton"
+            android:layout_gravity="center"
+            android:text="           LOGIN           "
+            android:textSize="14sp"
+            />
+
+
+        <!--Text View que redireciona para a página de ajuda-->
+        <Button
+            android:id="@+id/login_help"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/blueHelp"
+            android:text="HELP"
+            android:background="@drawable/roundedbutton"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

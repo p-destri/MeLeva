@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="petma.testesappcarona.UserInfo"
+    tools:showIn="@layout/activity_user_info"
+    android:orientation="vertical"
+    >
+
+
+    <Button
+        android:layout_width="36dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/dotdot"
+        tools:ignore="RelativeOverlap" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <!--Imagem do usuário vai aqui-->
+
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="#ffffff"
+            android:src="@drawable/ppl" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:text="Nome"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:textColor="@color/azulclaro"
+            />
+
+        <TextView
+            android:id="@+id/user_age"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:text="Idade"
+            android:textColor="#000000"
+            />
+
+        <!-- Bloco onde irão os 4 quadrados de informação
+        - Dividido em 2 ll
+        - coloca os blocos de cada ll c peso igual
+        - vai dividir auto em 4 partes
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false">
+
+            <!--Bloco1
+            - Colocar o nome e as infos aqui
+            -Colocar a progress bar
+            -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_marginRight="2.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:text="Caronas dadas/ Caronas pegadas"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:id="@+id/input_name_info"
+                    android:layout_weight="0.6"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="Amigos em Comum" />
+
+                <ImageView
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/colegas" />
+
+
+            </LinearLayout>
+
+            <!--Bloco 2
+            - Nao sei quais informações
+            -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:textSize="30sp"
+                    android:textColor="@color/amarelo"
+                    android:text="10.0"
+                    android:gravity="center"
+                    android:background="@drawable/star2"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/user_rating" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Preferências"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:background="@color/white" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

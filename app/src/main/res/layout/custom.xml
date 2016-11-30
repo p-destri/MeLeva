@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/blueHelp"
+        android:gravity="center"
+        android:text="Sobre a calculadora:"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Esta calculadora serve de auxílio caso você queria dividir o valor da carona"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Como utilizar ?"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/blueHelp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="Você pode utilizar a calculadora de duas maneiras. \n Insira somente a distância da carona e nosso algoritmo calculará o resto para você. Ou então colque os outros dados da carona. Caso algum dado fique em branco, iremos utilizar um valor padrão para calcular o custo.."
+        />
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" OK "
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:background="@color/branco"
+        android:textColor="@color/blueHelp"
+
+        />
+
+</LinearLayout>
